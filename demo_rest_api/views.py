@@ -38,6 +38,13 @@ class DemoRestApi(APIView):
 
 
 class DemoRestApiItem(APIView):
+    # agregar get
+    def get(self, request, item_id):
+        for item in data_list:
+            if item.get('id') == item_id:
+                return Response({'data': item}, status=status.HTTP_200_OK)
+
+        return Response({'error': 'Elemento no encontrado.'}, status=status.HTTP_404_NOT_FOUND)
     def put(self, request, item_id):
         data = request.data
 
