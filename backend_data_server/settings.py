@@ -132,5 +132,5 @@ FIREBASE_CREDENTIALS_PATH = credentials.Certificate("secrets/landing-key.json")
 
 # Inicialice la conexión con el Realtime Database con la clave privada y la URL de referencia
 firebase_admin.initialize_app(FIREBASE_CREDENTIALS_PATH, {
-   'databaseURL': 'https://landing-4f1a2-default-rtdb.firebaseio.com'
+   'databaseURL': 'https://landing-ccc19-default-rtdb.firebaseio.com/'
  })
