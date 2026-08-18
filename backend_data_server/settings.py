@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-!+fdt!7mb(pi4hh=yppp_ugcgn!3f$s^fhr04lv*d8(*%9!n+l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['MurilloTox.pythonanywhere.com']
 
 
 # Application definition
@@ -127,6 +127,9 @@ STATIC_URL = "static/"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, STATIC_URL),
 ]
+
+STATIC_ROOT = "assets/"
+
 # Coloque la ruta relativa al archivo con la clave privada
 FIREBASE_CREDENTIALS_PATH = credentials.Certificate("secrets/landing-key.json")
 
